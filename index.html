@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calc</title>
+</head>
+<body class="bg-slate-950">
+    <center><input id="typein" class="bg-slate-200 rounded-xl w-[900px] px-10 h-16 text-2xl my-10" value="" type="text" readonly></center>
+    <div class="flex justify-center space-x-10 py-10">
+    <button id="zero" class=" bg-slate-800 h-20 w-20 rounded-xl text-white text-xl " value= 0 onclick="add(this.value)">0</button>
+    <button id="one" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl " value= "1" onclick="add(1)">1</button>
+    <button id="two" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl " value= 2 onclick="add(2)">2</button>
+    <button id="three" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl " value= 3 onclick="add(3)">3</button>
+    <button id="four" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl" value= 4 onclick="add(4)">4</button>
+    <br>
+    </div>
+    <div class="flex justify-center space-x-10 py-10">
+    <button id="five" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl " value= 5 onclick="add(5)">5</button>
+    <button id="six" class=" bg-slate-900 h-20 w-20 rounded-xl text-white  text-xl" value= 6 onclick="add(6)">6</button>
+    <button id="seven" class=" bg-slate-900 h-20 w-20 rounded-xl text-white  text-xl" value= 7 onclick="add(7)">7</button>
+    <button id="eight" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl " value= 8 onclick="add(8)">8</button>
+    <button id="nine" class=" bg-slate-900 h-20 w-20 rounded-xl text-white text-xl " value= 9 onclick="add(9)">9</button>
+    <br>
+</div>
+<div class="flex justify-center space-x-10 py-10">
+    <button id="plus" value= '+' class="bg-pink-600 rounded-xl h-20 w-20 text-white text-xl" onclick="add('+')">+</button>
+    <button id="minus" class="bg-pink-600 rounded-xl h-20 w-20 text-white text-xl" value= - onclick="add('-')">-</button>
+    <button id="divide" class="bg-pink-600 rounded-xl h-20 w-20 text-white text-xl" value= '/' onclick="add('/')">/</button>
+    <button id="multiply" class="bg-pink-600 rounded-xl h-20 w-20 text-white text-xl" value=* onclick="add('*')">*</button>
+    <button id="equals" class="bg-pink-600 rounded-xl h-20 w-20 text-white text-xl" value="=" onclick="result()">=</button>
+    <br>
+</div>
+<div class="flex justify-center space-x-10 py-10">
+    <button id="." value="." class="rounded-xl h-20 w-20 text-white bg-blue-800 text-xl" onclick="add('.')">.</button>
+    <button id="(" value="(" onclick="add('(')" class="rounded-xl h-20 w-20 text-white bg-cyan-800 text-xl">(</button>
+    <button id="%" value="%" class="bg-cyan-400 rounded-xl h-20 w-20 text-black text-xl" onclick="perc()">%</button>
+    <button id=")" value=")" onclick="add(')')" class="rounded-xl h-20 w-20 text-white bg-cyan-800 text-xl">)</button>
+    <button id="c" class="bg-red-500 text-white h-20 w-20 text-white rounded-2xl text-xl" onclick="erase()">C</button>
+</div>    
+    <script src="index.js"></script>
+</body>
+</html>
